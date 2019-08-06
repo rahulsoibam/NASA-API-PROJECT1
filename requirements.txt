@@ -8,3 +8,4 @@ setuptools==40.8.0
 Werkzeug==0.15.4
 gunicorn==19.9.0
 flask-restplus==0.12.1
+requests==2.6.2
