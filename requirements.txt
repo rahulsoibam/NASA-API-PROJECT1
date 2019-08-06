@@ -7,4 +7,4 @@ pip==19.0.3
 setuptools==40.8.0 
 Werkzeug==0.15.4
 gunicorn==19.9.0
-flask-restplus==1.1.1
+flask-restplus==0.1.1
