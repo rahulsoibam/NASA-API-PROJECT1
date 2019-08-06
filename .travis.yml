@@ -1,7 +1,12 @@
 language: python
 python:
 - '3.7'
+install:
+- pip3 install -r requirements.txt
+script:
+- python -m unittest discover
 deploy:
-  provider: heroku
-  app: nasa-api-app
-  api_key:""
+  - provider: heroku
+    api_key:
+      secure:cLTK2EZJKEbMt5cXqmBXJVbfbH/pbUxC1hNkVH5iXpPuhmzGg1rbjf+5LTV1vqL3fACYYhE/YOI2/Y6eb1Aoj/Xpc29/prS96s395bNxz4iPCrgsUAvRpDiYEO1y5h0iuLT/XWxexEoQ+W/wEYH7uvXzGKy3PEGQwzhQQxw0j4WjG5T0BTLABg3GQcldCpsjKOMtsjq7vjZNXTHSaWcg8WvlQujLc5bnXUXktbT32E7CeXKkvTDtNaGZoQlBZQ2mdbUM9RPu1rnkLcGwSX1MGwRoFPOvDFn0b9I4rxD9tthxqLWuRK2uRFI09PurlcX8PUtp9xi9JV2aQK2+mpQ5frl8uSP+GAlpWvXHLqZQ+LVs6Bh02pPpCRochczShG0RNMVwayOetAy69SY74NBMrlf7XZpBR71DKVZPoWteOZcbfH/WaRuCtzQqVlptFnkKBC5LJVIijrex7avDe2TSwBHIQ7rRexSJm0zFtOn9ZbTLjSfXA6IZQtfWs5u4H6EydWrZFCQs8ZLVDrF3wyEg4slS73N+TOBGfRFNsuUC/bF3suJrOUXx/0Tb/BKL+T3AvXIE7pAWXckFDw223/HUtGRhXy4+nTExKhK3zmf27wTB/GIWmJBv+rL5ZCq28l9ZrZuexURRjBd0lczvpdptzSVmSKDeJ61oyFd9LxdCKP4=
+    app: nasa-api-app
