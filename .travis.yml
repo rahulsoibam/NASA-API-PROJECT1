@@ -1,4 +1,7 @@
 language: python
 python:
 - '3.7'
-
+deploy:
+  provider: heroku
+  api_key:
+    secure: "YOUR ENCRYPTED API KEY"
