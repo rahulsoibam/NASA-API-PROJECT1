@@ -41,6 +41,6 @@ class apiModule(Resource):
 # APP RUN SETTINGS
 ##################
 if __name__ == '__main__':
-    app.run(debug=True, host= '0.0.0.0', port=Config.BIND_PORT, threaded=True)
+    app.run(debug=True, host = '0.0.0.0',port=5005 threaded=True)
     
 
