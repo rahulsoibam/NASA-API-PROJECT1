@@ -3,5 +3,5 @@ python:
 - '3.7'
 deploy:
   provider: heroku
-  api_key:
-    secure: "YOUR ENCRYPTED API KEY"
+  app: nasa-api-app
+  api_key:""
