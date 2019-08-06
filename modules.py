@@ -19,7 +19,7 @@ def request_nasa_api(API_TOKEN):
     reader = Links.read()
     responimg = json.loads(reader.decode('utf-8'))
     image = responimg['hdurl']
-    return webbrowser.open('image') 
+    return webbrowser.open(image) 
     print(response.content)
     
 
