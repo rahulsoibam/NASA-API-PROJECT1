@@ -1,1 +1,1 @@
-worker: python server.py runserver 0.0.0.0:$PORT
+web: python app.py runserver 0.0.0.0:5000
